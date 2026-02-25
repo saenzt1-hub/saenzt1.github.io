@@ -73,7 +73,7 @@
 				
 	div.col-right{
 		float:right;
-		width:660px
+		width:660px;
 		}
 		
 	div.sidebar-left{
@@ -168,4 +168,5 @@
 	div#footer p {
 		animation: fadeIn 2s ease-in;
 	}
+
 
