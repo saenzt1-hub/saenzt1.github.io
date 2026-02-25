@@ -86,8 +86,10 @@
 		color:#445e64;	/* this redefines all links in the left sidebar to this new color, as opposed to the default blue link color */
 	}
 	
-	div.sidebar-left a:hover{
-		text-decoration:none
+	@media (hover: hover) {
+		div.sidebar-left a:hover {
+			text-decoration:none
+		}
 	}	/* when hovering over a link, in the sidebar, this turns off the underline */
 	
 	.list{
@@ -134,6 +136,10 @@
 			box-sizing: border-box;
 		}
 
+		div#header {
+			padding-top: 15px;
+		}
+
 		div.col-right,
 		div.sidebar-left {
 			float: none;
@@ -153,3 +159,13 @@
 			margin: 0 auto 15px auto;
 		}
 	}
+
+	@keyframes fadeIn {
+		from { opacity: 0; }
+		to { opacity: 1; }
+	}
+
+	div#footer p {
+		animation: fadeIn 2s ease-in;
+	}
+
